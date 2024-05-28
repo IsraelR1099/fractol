@@ -1,7 +1,7 @@
 ## Clarifications
 In my implementation, I will use column-major order to iterate over the loops. This means that the first index will be the column and the second index will be the row. This is the opposite of the row-major order that is used in C.
 
-![Image column-major order](https://github.com/IsraelR1099/pdf/blob/master/images/Row_and_column_major_order.png)
+<img src="https://github.com/IsraelR1099/pdf/blob/master/images/Row_and_column_major_order.png" width="100" height="100">
 
 
 ## Transforms
