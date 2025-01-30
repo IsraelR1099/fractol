@@ -21,7 +21,7 @@ NAME := fractol
 #La opcion -MD crea una dependencia hacia los headers del sistema y del usuario
 CFLAGS := -Wall -Wextra -Werror -MMD -O3 -fsanitize=address -g
 DEPS = include/lib_fractal.h
-DEPS_MLX = mlx/mlx.h
+DEPS_MLX = mlx_linux/mlx.h
 SRC = src/ft_formulas.c \
 	  src/ft_formulas2.c \
 	  src/ft_formulas3.c \
@@ -43,20 +43,20 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	@echo "$(GREEN)Compilando libreria mlx$(RESET)"
-	cd mlx && make all
-	gcc $(CFLAGS) $(SRC) -Lmlx -lmlx -framework OpenGL -framework AppKit -o $@
+	cd mlx_linux && make all
+	gcc $(CFLAGS) $(OBJ) -L./mlx_linux -lmlx_Linux -lX11 -lXext -lm -o $(NAME)
 	rm -f fractol.d
 	@echo "$(GREEN)Compilacion acabada$(RESET)"
 
 #incluir la dependencia a Makefile
 -include $(OBJ:.o=.d)
 %.o: %.c
-	gcc $(CFLAGS) -o $@ -c $<
+	gcc $(CFLAGS) -Imlx_linux -o $@ -c $<
 
 bonus: $(NAME)
 
 clean:
-	cd mlx && make $@
+	cd mlx_linux && make $@
 	rm -f $(OBJ) $(DEPENDS)
 	@echo "$(RED)Objetos borrados$(RESET)"
 

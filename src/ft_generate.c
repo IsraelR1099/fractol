@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../include/lib_fractal.h"
-#include "../mlx/mlx.h"
+#include "../mlx_linux/mlx.h"
 
 int	checker(char *str)
 {

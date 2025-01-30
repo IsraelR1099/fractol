@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../mlx/mlx.h"
+#include "../mlx_linux/mlx.h"
 #include "../include/lib_fractal.h"
 
 int	main(int counter, char **str)
