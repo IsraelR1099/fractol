@@ -6,7 +6,7 @@
 /*   By: irifarac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/28 10:52:12 by irifarac          #+#    #+#             */
-/*   Updated: 2025/03/14 12:27:42 by irifarac         ###   ########.fr       */
+/*   Updated: 2025/03/14 14:15:31 by irifarac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,15 +40,16 @@ void	change_values(t_window *init)
 
 int	key_event(int button, t_window *init)
 {
-	if (button == 53)
+	printf("button es %d\n", button);
+	if (button == 53 || button == 65307)
 		destroy_window(init);
-	else if (button == 126)
+	else if (button == 126 || button == 119)
 		init->trl_y += 10;
-	else if (button == 125)
+	else if (button == 125 || button == 115)
 		init->trl_y -= 10;
-	else if (button == 124)
+	else if (button == 124 || button == 100)
 		init->trl_x -= 10;
-	else if (button == 123)
+	else if (button == 123 || button == 97)
 		init->trl_x += 10;
 	else if (button == 69)
 		init->max_iter += 10;
@@ -64,6 +65,7 @@ int	key_event(int button, t_window *init)
 
 int	ft_mouse_event(int button, int x, int y, t_window *init)
 {
+	printf("key event button %d\n", button);
 	if (button == 5)
 	{
 		init->trl_x += (int)((x - 640) * init->z_x);
