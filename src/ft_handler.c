@@ -6,12 +6,12 @@
 /*   By: irifarac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/28 10:52:12 by irifarac          #+#    #+#             */
-/*   Updated: 2024/05/15 10:05:23 by irifarac         ###   ########.fr       */
+/*   Updated: 2025/03/14 12:27:42 by irifarac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/lib_fractal.h"
-#include "../mlx_linux/mlx.h"
+#include "../miniLibX_X11/mlx.h"
 
 void	reset_variables(t_window *init)
 {

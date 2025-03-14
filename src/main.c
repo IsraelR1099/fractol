@@ -6,11 +6,11 @@
 /*   By: irifarac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 12:06:35 by irifarac          #+#    #+#             */
-/*   Updated: 2022/06/02 09:53:10 by irifarac         ###   ########.fr       */
+/*   Updated: 2025/03/14 12:28:02 by irifarac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../mlx_linux/mlx.h"
+#include "../miniLibX_X11/mlx.h"
 #include "../include/lib_fractal.h"
 
 int	main(int counter, char **str)

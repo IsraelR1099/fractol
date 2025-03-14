@@ -6,12 +6,12 @@
 /*   By: irifarac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 13:03:28 by irifarac          #+#    #+#             */
-/*   Updated: 2022/06/01 09:57:56 by irifarac         ###   ########.fr       */
+/*   Updated: 2025/03/14 12:27:15 by irifarac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/lib_fractal.h"
-#include "../mlx_linux/mlx.h"
+#include "../miniLibX_X11/mlx.h"
 
 void	ft_mandelbrot_inv(t_window *init)
 {
